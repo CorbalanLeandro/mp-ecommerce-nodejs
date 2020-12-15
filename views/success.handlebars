@@ -3,15 +3,18 @@
   <tbody>
     <tr>
       <td>Payment type</td>
-      <td>External reference</td>
-      <td>Collection Id</td>
+      <td>{{ payment_type }}</td>
     </tr>
     <tr>
-      <td>{{ payment_type }}</td>
-      <td>{{ external_reference }}</td>
+      <td>External reference</td>
+      <td>{{ external_reference }}</td>      
+    </tr>
+    <tr>      
+      <td>Collection Id</td>
       <td>{{ collection_id }}</td>
     </tr>
   </tbody>
 </table>
   <a href="/" class="mercadopago-button p-3">Volver al home</a>
 </div>
+<script src="https://www.mercadopago.com/v2/security.js" view="success"></script>
